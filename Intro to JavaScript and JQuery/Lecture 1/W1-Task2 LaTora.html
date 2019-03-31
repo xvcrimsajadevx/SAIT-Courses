@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grades and Sales Total</title>
+        <script type="text/javascript">
+            function gradeAverage() {
+                var grade1 = parseInt(prompt("Please enter the first grade you wish to average.")); //Gets first grade from user
+                var grade2 = parseInt(prompt("Please enter the second grade you wish to average.")); //Gets second grade from user
+                var grade3 = parseInt(prompt("Please enter the third grade you wish to average.")); //Gets third grade from user
+                
+                var average = (grade1 + grade2 + grade3)/3; //Adds three grades together and divides by 3 for average
+                alert("Your grade average is " + average) + "."; //Alerts user with average grade.
+            };
+            
+            function salesTotal() {
+                var itemPrice = parseInt(prompt("Please enter the price of your item.")); //Gets the item price from user
+                var discountPrice = itemPrice - (itemPrice * .20); //Calculates price of item with 20% discount
+                var totalPrice = discountPrice + (discountPrice * .05); //Calculates price of item from discount price with 5% sales tax
+                
+                alert("Your price total is " + totalPrice) + "."; //Alerts user to total price of item
+            };
+        </script>
+    </head>
+    <body>
+        <p>To calculate Grade Average, click here: <input type="button" id="grade" value="Grade Average" onclick="gradeAverage()" /></p>
+        <p>To calculate Sales Total, click here: <input type="button" id="sales" value="Sales Total" onclick="salesTotal()" /></p>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script type="text/javascript">
+            function convertTemp() {
+                var temp = parseInt(prompt("Please enter the temperature you wish to convert:"));
+                var metric = prompt("In which unit is your temperature declared? c=Celcius, f=Fehrenheit");
+                var convertedTemp;
+                
+                switch (metric) {
+                    case "c":
+                        convertedTemp = (((9/5) * temp) + 32);
+                        alert(convertedTemp)
+                        
+                        alert(temp + "°C is equal to " + convertedTemp + "°F.");
+                        break;
+                    case "f":
+                        convertedTemp = ((temp - 32) * (5/9))
+                        
+                        alert(temp + "°F is equal to " + convertedTemp + "°C.");
+                        break;
+                    default:
+                        alert("Sorry. Invalid entry (can only enter c or f).");
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Functions - Programming Challenge 1</h1>
+        <p>This page will prompt user to enter a temperature, then ask the user to state whether the input is in Fehrenheit or Celsius. After, the program will convert temperature to the other metric.</p>
+        <hr>
+        <input type="button" value="Click here to convert temperature." onclick="convertTemp()" />
+    
+    </body>
+</html>

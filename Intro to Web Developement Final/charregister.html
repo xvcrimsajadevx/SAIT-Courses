@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ToH: Character Database</title>
+		<meta charset="UTF-8" />
+		<link href="styles.css" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative:400,700" rel="stylesheet">
+	</head>
+	<body>
+		<div class="topbar">
+			<table style="width: 98%; max-width:1350px; margin: 0px auto;">
+				<tr>
+					<td id="topbartitle" style="width: 300px"><a href="index.html">Tales of Hyrule: Character Database</a></td>
+					<td id="topbarlinks" style="float: right;">
+						<a href="">Log In</a><a href="">Register</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="wrapper">
+				<div class="sidebar">
+					<div class="sidebar-content">
+						<h1>Navigation</h1>
+						<a href="http://loztalesofhyrule.jcink.net/index.php?act=idx" target="_blank">->Main Site</a>
+						<hr />
+						<a href="index.html">--->Database Home<---</a>
+						<a href="">Search Database</a>
+					</div>
+					<div class="sidebar-content">
+						<h1>Browse By</h1>
+						<a href="">Name</a>
+						<a href="">Race</a>
+						<a href="">Canon</a>
+						<a href="">Owner</a>
+						<a href="">Face Claim</a>
+						<hr />
+						<a href="">Full Canon List</a>
+					</div>
+					<div class="sidebar-content">
+						<h1>Registration/Approval</h1>
+						<a href="charregister.html">->Register New Character<-</a>
+						<a href="">--->Pending Approval<---</a>
+						<a href="">Approved Characters</a>
+						<hr />
+						<a href="">Your Characters</a>
+					</div>
+				</div>
+				<div class="main">
+					<div class="site-banner">
+						<div class="banner-title">
+							<span id="bt">Tales of Hyrule</span>
+							<span id="st">Character Database</span>
+						</div>
+						<div class="banner-search">
+							<form action="search.html" method="post">
+								<fieldset>
+									<input type="text" id="search" name="search" placeholder="Search database..." /><br />
+								</fieldset>
+							<input type="submit" value="Search">
+							</form>
+						</div>
+					</div>
+					<div class="site-content">
+						<h1>Create Your Character</h1>
+						<div id="display">
+							<!-- Ipsum generated at http://loremofzelda.com/ -->
+							<p>Wielding the blade of evil's bane, he sealed the dark one away and gave the land light... This boy, who traveled through time to save the land, was known as the Hero of Time... The boy's tale was passed down through generations until it became legend... It was a prosperous land, blessed with green forests, tall mountains, and peace... Are you him? Are you the one who was speaking through my stone without my permission? Answer me! But then, when all hope had died and the hour of doom was at hand, a young boy in green appeared as if from nowhere... Below is a list of links to help get you started. Feel free to browse other characters, and do not hesitate to ask staff if you have any questions!</p>
+							<p><i>*ToH's database is best viewed in Google Chrome</i></p>
+							<hr />
+							<div style="display:block; text-align: center;">
+								<a href="http://loztalesofhyrule.jcink.net/index.php?showtopic=1&view=findpost&p=1" target="_blank">Premise</a>
+								<a href="http://loztalesofhyrule.jcink.net/index.php?showtopic=2&view=findpost&p=2" target="_blank">Rules</a>
+								<a href="http://loztalesofhyrule.jcink.net/index.php?showtopic=3&view=findpost&p=3" target="_blank">Site Lore</a>
+								<a href="http://loztalesofhyrule.jcink.net/index.php?showtopic=4&view=findpost&p=4" target="_blank">Canon List</a>
+								<a href="http://loztalesofhyrule.jcink.net/index.php?showtopic=5&view=findpost&p=5" target="_blank">FAQ</a>
+								<a href="https://zelda.gamepedia.com/Main_Page" target="_blank">Zelda Wiki</a>
+							</div>
+						</div>
+						<form action="submit.html" method="post">
+						<h1 class="app-display">Character Application</h1>
+						<div class="app-wrapper">
+							<div class="app-sidebar" id="ooc-data">
+							<h2 class="app-display">OOC Data</h2>
+								<fieldset>
+									<legend>Player Info</legend>
+									<label for="ooc-name">OOC Name:</label><input type="text" id="ooc-name" name="ooc-name" /><br />
+									<label for="ooc-age">Age/Age Group:</label><input type="text" id="ooc-age" name="ooc-age" /><br />
+									<label for="ooc-gender">Gender/Pronouns:</label><input type="text" id="ooc-gender" name="ooc-gender" /><br />
+									<label for="ooc-link">OOC Account Link:</label><input type="text" id="ooc-link" name="ooc-link" /><br />
+								</fieldset>
+								<fieldset>
+									<legend>Character Images</legend>
+									<label for="avatar-link">Avatar Link (250x450):</label><br />
+									<input type="text" id="avatar-link" name="avatar-link" /><br />
+									<label for="avatar-source">Source:</label><br />
+									<input type="text" id="avatar-source" name="avatar-source" /><br />
+									<label for="icon-link">Icon Link (120x120):</label><br />
+									<input type="text" id="icon-link" name="icon-link" /><br />
+									<label for="icon-source">Source:</label><br />
+									<input type="text" id="icon-source" name="icon-source" /><br />
+								</fieldset>
+								<fieldset>
+									<legend>Profile Images</legend>
+									<label for="profile-1">Profile Image 1 (100x100):</label><br />
+									<input type="text" id="profile-1" name="profile-1" /><br />
+									<label for="profile-2">Profile Image 2 (100x100):</label><br />
+									<input type="text" id="profile-2" name="profile-2" /><br />
+									<label for="profile-3">Profile Image 3 (100x100):</label><br />
+									<input type="text" id="profile-3" name="profile-3" /><br />
+									<label for="profile-2">Profile Image 4 (100x100):</label><br />
+									<input type="text" id="profile-4" name="profile-4" /><br />
+								</fieldset>
+							</div>
+							
+							<div class="app-body" id="char-data">
+							<h2 class="app-display">Character Info</h2>
+								<div class="app-field" id="char-basic">
+								<h3 class="app-display">Statistics</h3>
+									<fieldset>
+										<legend>Character Name</legend>
+										<label for="char-fname">First Name:</label><input type="text" id="char-fname" name="char-fname" size="18" />
+										<label for="char-mname">Middle Name:</label><input type="text" id="char-mname" name="char-mname" size="18" />
+										<label for="char-lname">Last Name:</label><input type="text" id="char-lname" name="char-lname" size="18"/>
+									</fieldset>
+									<fieldset style="width: 430px; float:left;">
+										<legend>Race</legend>
+										<div style="background-color:#9AA698;padding:5px;margin:2px;border-radius: 5px; text-align:center;border:1px solid #667866;"><label for="char-race1">Primary Race:</label>
+											<select id="char-race1" name="char-race">
+												<option value="input[char-creature]">Creature</option>
+												<option value="fairy">Fairy</option>
+												<option value="gerudo">Gerudo</option>
+												<option value="goron">Goron</option>
+												<option value="human">Human</option>
+												<option value="hylian" selected="selected">Hylian</option>
+												<option value="kokiri">Kokiri</option>
+												<option value="rito">Rito</option>
+												<option value="sheikah">Sheikah</option>
+												<option value="twili">Twili</option>
+												<option value="zora">Zora</option>
+											</select>
+											<label for="char-creature1">Creature Type:</label><input type="text" id="char-creature1" name="char-creature1" placeholder="If creature..." /><br />
+											<span style="font-size:11px">This is the group your character will be sorted into on the forms</span>
+										</div>
+										<label>Mixed Race?</label>
+											<input type="radio" id="mixed-no" name="mixed-race" value="no" checked="checked" /><label for="mixed-no">No</label>
+											<input type="radio" id="mixed-yes" name="mixed-race" value="yes" /><label for="mixed-yes">Yes</label>
+										<label>If yes, how many races?</label>
+											<input type="radio" id="mixed2" name="mixed-number" value="2" checked="checked"/><label for="mixed2">2</label>
+											<input type="radio" id="mixed3" name="mixed-number" value="3" /><label for="mixed2">3</label>
+											<input type="radio" id="mixed4" name="mixed-number" value="4" /><label for="mixed2">4</label><br />
+										<p style="font-size:10px;">Please note that in Hyrule's current state, it is incredibly unlikely that certain racial mixes would exist, and it's highly unlikely your character will ever have more than two, <i>maybe</i> three, races of origin. All mixed-raced characters are judged on a case-by-case bases, so the more info you give, the better.</p> 
+										<div><label for="char-race2">Secondary Race:</label>
+											<select id="char-race2" name="char-race">
+												<option value="">Select</option>
+												<option value="input[char-creature]">Creature</option>
+												<option value="fairy">Fairy</option>
+												<option value="gerudo">Gerudo</option>
+												<option value="goron">Goron</option>
+												<option value="human">Human</option>
+												<option value="hylian">Hylian</option>
+												<option value="kokiri">Kokiri</option>
+												<option value="rito">Rito</option>
+												<option value="sheikah">Sheikah</option>
+												<option value="twili">Twili</option>
+												<option value="zora">Zora</option>
+											</select>
+											<label for="char-creature2">Creature Type:</label><input type="text" id="char-creature2" name="char-creature2" placeholder="If creature..." />
+										</div>
+										<div><label for="char-race3">Tertiary Race:</label>
+											<select id="char-race3" name="char-race">
+												<option value="">Select</option>
+												<option value="input[char-creature]">Creature</option>
+												<option value="fairy">Fairy</option>
+												<option value="gerudo">Gerudo</option>
+												<option value="goron">Goron</option>
+												<option value="human">Human</option>
+												<option value="hylian">Hylian</option>
+												<option value="kokiri">Kokiri</option>
+												<option value="rito">Rito</option>
+												<option value="sheikah">Sheikah</option>
+												<option value="twili">Twili</option>
+												<option value="zora">Zora</option>
+											</select>
+											<label for="char-creature3">Creature Type:</label><input type="text" id="char-creature3" name="char-creature3" placeholder="If creature..." />
+										</div>
+										<div><label for="char-race4">Fourth Race:</label>
+											<select id="char-race4" name="char-race">
+												<option value="">Select</option>
+												<option value="input[char-creature]">Creature</option>
+												<option value="fairy">Fairy</option>
+												<option value="gerudo">Gerudo</option>
+												<option value="goron">Goron</option>
+												<option value="human">Human</option>
+												<option value="hylian">Hylian</option>
+												<option value="kokiri">Kokiri</option>
+												<option value="rito">Rito</option>
+												<option value="sheikah">Sheikah</option>
+												<option value="twili">Twili</option>
+												<option value="zora">Zora</option>
+											</select>
+											<label for="char-creature4">Creature Type:</label><input type="text" id="char-creature4" name="char-creature4" placeholder="If creature..." />
+										</div>
+									</fieldset>
+									<fieldset>
+										<legend>Birthday</legend>
+										<select id="bday-season" name="bday-season">
+											<option value="">Season</option>
+											<option value="spring">Spring</option>
+											<option value="summer">Summer</option>
+											<option value="fall">Fall</option>
+											<option value="winter">Winter</option>
+										</select>
+										<Input type="number" min="1" max="31" value="1" style="width:30px;">
+										<label for="char-age">Age (in letters):</label><input type="text" id="char-age" name="char-age" size="3" />
+									</fieldset>
+									<fieldset>
+										<legend>Pronouns/Gender</legend>
+										<label>Prefered Pronouns:</label><br />
+											<input type="radio" id="pronouns1" name="char-pronouns" value="he-him" /><label for="pronouns1">He/Him</label>
+											<input type="radio" id="pronouns2" name="char-pronouns" value="she-her" /><label for="pronouns2">She/Her</label>
+											<input type="radio" id="pronouns3" name="char-pronouns" value="they-them" /><label for="pronouns3">They/Them</label><br />
+											<input type="radio" id="pronouns4" name="char-pronouns" value="input[pronouns-other]" /><label for="pronouns4">Other:</label><input type="text" id="pronouns-other" name="pronouns-other" /><br />
+										<p>- and/or -</p>
+										<label>Gender:</label><br />
+											<input type="radio" id="gender1" name="char-gender" value="male" /><label for="gender1">Male</label>
+											<input type="radio" id="gender2" name="char-gender" value="female" /><label for="gender2">Female</label>
+											<input type="radio" id="gender3" name="char-gender" value="bigender" /><label for="gender3">Bigender</label>
+											<input type="radio" id="gender4" name="char-gender" value="agender" /><label for="gender4">Agender</label><br />
+											<input type="radio" id="gender5" name="char-gender" value="genderflux" /><label for="gender5">Genderflux</label>
+											<input type="radio" id="gender6" name="char-gender" value="genderfluid" /><label for="gender6">Genderfluid</label>
+											<input type="radio" id="gender7" name="char-gender" value="non-binary" /><label for="gender7">Non-Binary</label><br />
+											<input type="radio" id="gender8" name="char-gender" value="genderneutral" /><label for="gender8">Genderneutral</label>
+											<input type="radio" id="gender9" name="char-gender" value="input[gender-other]" /><label for="gender8">Other:</label><input type="text" id="gender-other" name="gender-other" size="9" /><br />
+									</fieldset>
+									<fieldset style="margin:1px;">
+										<legend>Occupation</legend>
+										<label>Is this character canon?</label>
+											<input type="radio" id="canon-no" name="char-canon" value="no" checked="checked" /><label for="canon-no">No</label>
+											<input type="radio" id="canon-yes" name="char-canon" value="yes" /><label for="canon-yes">Yes</label>
+										<label for="which-canon">Please indicate which position you are applying for:</label><input type="text" id="which-canon" name="which-canon" /><br />
+										<label for="char-occupation">Occupation:</label><input type="text" id="char-occupation" name="char-occupation" />
+									</fieldset>
+								</div>
+								<div class="app-field" id="char-appearance">
+								<h3 class="app-display">Appearance</h3>
+									<fieldset>
+										<legend>Description</legend>
+										<label>Height:</label> <label for="height-ft">Feet:</label><input type="number" id="height-ft" name="height-ft" min="0" max="30" value="0" />
+										<label for="height-in">Inches:</label><input type="number" id="height-in" name="height-in" min="0" max="11.75" step="0.25" value="0" />
+										<label for="char-weight">Weight (lbs):</label><input type="text" id="char-weight" name="char-weight" /><br />
+										<label for="char-desc">Physical Build:</label><textarea id="char-desc" name="char-desc" rows="1" cols="80" placeholder="Brief description of physical build."></textarea><br />
+										<label for="char-wardrobe">Wardrobe:</label><textarea id="char-wardrobe" name="char-wardrobe" rows="1" cols="80" placeholder="General taste in clothes and preferences of colour."></textarea><br />
+										<label for="char-traits">Unique Traits:</label><textarea id="char-traits" name="char-traits" rows="1" cols="80" placeholder="Any unique markings, scarring or any sort of differentiating features."></textarea>
+									</fieldset>
+									<fieldset>
+										<legend>Play-By</legend>
+										<label for="pb-name">Play-By Name:</label><input type="text" id="pb-name" name="pb-name" />
+										<label for="pb-series">Series:</label><input type="text" id="pb-series" name="pb-series" /><br />
+										<label for="credit-avi">Source Link (Avatar):</label><input type="text" id="credit-avi" name="credit-avi" />
+										<label for="credit-icon">Source Link (Icon):</label><input type="text" id="credit-icon" name="credit-icon" />
+									</fieldset>
+								</div>
+								<div class="app-field" id="char-background">
+								<h3 class="app-display">Background</h3>
+									<p>Write at least ten points about your character; no more than twenty - they can be short or long but they should give us a good, general idea about your character. These points can expand on their personality, their morals, their dreams, their backstory, their family, their opinions etc.</p>
+									<label>Additional points required?</label>
+										<input type="radio" id="additional-no" name="bg-additional" value="no" checked="checked" /><label for="additional-no">No</label>
+										<input type="radio" id="additional-yes" name="bg-additional" value="yes" /><label for="additional-yes">Yes</label><br /><br />
+									<fieldset style="width:340px; float:left; position:absolute;">
+										<legend>Required Points</legend>
+										<label for="background-pt1">Point 1:</label><textarea id="background-pt1" name="background-pt1" rows="1"  ></textarea><br />
+										<label for="background-pt2">Point 2:</label><textarea id="background-pt2" name="background-pt2" rows="1" ></textarea><br />
+										<label for="background-pt3">Point 3:</label><textarea id="background-pt3" name="background-pt3" rows="1" ></textarea><br />
+										<label for="background-pt4">Point 4:</label><textarea id="background-pt4" name="background-pt4" rows="1" ></textarea><br />
+										<label for="background-pt5">Point 5:</label><textarea id="background-pt5" name="background-pt5" rows="1" ></textarea><br />
+										<label for="background-pt6">Point 6:</label><textarea id="background-pt6" name="background-pt6" rows="1"  ></textarea><br />
+										<label for="background-pt7">Point 7:</label><textarea id="background-pt7" name="background-pt7" rows="1"  ></textarea><br />
+										<label for="background-pt8">Point 8:</label><textarea id="background-pt8" name="background-pt8" rows="1"  ></textarea><br />
+										<label for="background-pt9">Point 9:</label><textarea id="background-pt9" name="background-pt9" rows="1" ></textarea><br />
+										<label for="background-pt10">Point 10:</label><textarea id="background-pt10" name="background-pt10" rows="1"  ></textarea><br />
+										
+									</fieldset>
+									<fieldset style="width:340px; margin-left:365px;">
+										<legend>Additional Points</legend>
+										<input type="checkbox" id="additional-1" name="additional-1" value="T" />
+											<label for="background-pt11">Point 11:</label><textarea id="background-pt11" name="background-pt11" rows="1"  ></textarea><br />
+										<input type="checkbox" id="additional-2" name="additional-2" value="T" />
+											<label for="background-pt12">Point 12:</label><textarea id="background-pt12" name="background-pt12" rows="1"  ></textarea><br />
+										<input type="checkbox" id="additional-3" name="additional-3" value="T" />
+											<label for="background-pt13">Point 13:</label><textarea id="background-pt13" name="background-pt13" rows="1"  ></textarea><br />
+										<input type="checkbox" id="additional-4" name="additional-4" value="T" />
+											<label for="background-pt14">Point 14:</label><textarea id="background-pt14" name="background-pt14" rows="1"  ></textarea><br />
+										<input type="checkbox" id="additional-5" name="additional-5" value="T" />
+											<label for="background-pt15">Point 15:</label><textarea id="background-pt15" name="background-pt15" rows="1"  ></textarea><br />
+										<input type="checkbox" id="additional-6" name="additional-6" value="T" />
+											<label for="background-pt16">Point 16:</label><textarea id="background-pt16" name="background-pt16" rows="1"  ></textarea><br />
+										<input type="checkbox" id="additional-7" name="additional-7" value="T" />
+											<label for="background-pt17">Point 17:</label><textarea id="background-pt17" name="background-pt17" rows="1"  ></textarea><br />
+										<input type="checkbox" id="additional-8" name="additional-8" value="T" />
+											<label for="background-pt18">Point 18:</label><textarea id="background-pt18" name="background-pt18" rows="1"  ></textarea><br />
+										<input type="checkbox" id="additional-9" name="additional-9" value="T" />
+											<label for="background-pt19">Point 19:</label><textarea id="background-pt19" name="background-pt19" rows="1"  ></textarea><br />
+										<input type="checkbox" id="additional-10" name="additional-10" value="T" />
+											<label for="background-pt20">Point 20:</label><textarea id="background-pt20" name="background-pt20" rows="1"  ></textarea><br />
+									</fieldset>
+								</div>
+								<div class="app-field" id="char-abilities">
+								<h3 class="app-display">Equipment & Abilities</h3>
+									<fieldset>
+										<legend>Unique Item</legend>
+										<p>Describe the item unique to your character here - balance it out.</p>
+										<label for="uitem-name">Unique Weapon/Item Name:</label><input type="text" id="uitem-name" name="uitem-name" />
+										<label for="uitem-description">Description:</label><textarea id="uitem-description" name="uitem-description" rows="1"  ></textarea><br />
+									</fieldset>
+									<fieldset>
+										<legend>Abilities</legend>
+										<p>List and describe any specific Equipment they regularly use, any Abilities that are natural to them and any Magic they possess; these can be presented in paragraphs</p>
+											<ul><li>or in bullet points!</li></ul>
+										<input type="checkbox" id="ability1" name="ability1" value="T" style="float:left;" />
+											<div style="margin-left:20px;"><label for="ability1-type">Type:</label>
+											<select id="ability1-type" name="ability-type1">
+												<option value="Equipment">Equipment</option>
+												<option value="Ability">Ability</option>
+												<option value="Magic">Magic</option>
+											</select>
+											<label for="ability1-name">Name:</label><input type="text" id="ability1-name" name="ability1-name" />
+											<label>Turn on bullet point?:</label>
+												<input type="radio" id="ability1-no" name="ability1-bullet" value="no" checked="checked" /><label for="ability1-no">No</label>
+												<input type="radio" id="ability1-yes" name="ability1-bullet" value="yes" /><label for="ability1-yes">Yes</label> <span>(Use li  /li tags)</span><br /> 
+											<label for="ability1-description">Description:</label><textarea id="ability1-description" name="ability1-description" rows="1"  ></textarea></div>
+										<br />
+										<input type="checkbox" id="ability2" name="ability2" value="T" style="float:left;" />
+											<div style="margin-left:20px;"><label for="ability2-type">Type:</label>
+											<select id="ability2-type" name="ability-type2">
+												<option value="Equipment">Equipment</option>
+												<option value="Ability">Ability</option>
+												<option value="Magic">Magic</option>
+											</select>
+											<label for="ability2-name">Name:</label><input type="text" id="ability2-name" name="ability2-name" />
+											<label>Turn on bullet point?:</label>
+												<input type="radio" id="ability2-no" name="ability2-bullet" value="no" checked="checked" /><label for="ability2-no">No</label>
+												<input type="radio" id="ability2-yes" name="ability2-bullet" value="yes" /><label for="ability2-yes">Yes</label> <span>(Use li  /li tags)</span><br /> 
+											<label for="ability2-description">Description:</label><textarea id="ability2-description" name="ability2-description" rows="1"  ></textarea></div>
+										<br />
+										<input type="checkbox" id="ability3" name="ability3" value="T" style="float:left;" />
+											<div style="margin-left:20px;"><label for="ability3-type">Type:</label>
+											<select id="ability3-type" name="ability-type3">
+												<option value="Equipment">Equipment</option>
+												<option value="Ability">Ability</option>
+												<option value="Magic">Magic</option>
+											</select>
+											<label for="ability3-name">Name:</label><input type="text" id="ability3-name" name="ability3-name" />
+											<label>Turn on bullet point?:</label>
+												<input type="radio" id="ability3-no" name="ability3-bullet" value="no" checked="checked" /><label for="ability3-no">No</label>
+												<input type="radio" id="ability3-yes" name="ability3-bullet" value="yes" /><label for="ability3-yes">Yes</label> <span>(Use li  /li tags)</span><br /> 
+											<label for="ability3-description">Description:</label><textarea id="ability3-description" name="ability3-description" rows="1"  ></textarea></div>
+										<br />
+										<input type="checkbox" id="ability4" name="ability4" value="T" style="float:left;" />
+											<div style="margin-left:20px;"><label for="ability4-type">Type:</label>
+											<select id="ability4-type" name="ability-type4">
+												<option value="Equipment">Equipment</option>
+												<option value="Ability">Ability</option>
+												<option value="Magic">Magic</option>
+											</select>
+											<label for="ability4-name">Name:</label><input type="text" id="ability4-name" name="ability4-name" />
+											<label>Turn on bullet point?:</label>
+												<input type="radio" id="ability4-no" name="ability4-bullet" value="no" checked="checked" /><label for="ability4-no">No</label>
+												<input type="radio" id="ability4-yes" name="ability4-bullet" value="yes" /><label for="ability4-yes">Yes</label> <span>(Use li  /li tags)</span><br /> 
+											<label for="ability4-description">Description:</label><textarea id="ability4-description" name="ability4-description" rows="1"  ></textarea></div>
+										<br />
+										<input type="checkbox" id="ability5" name="ability5" value="T" style="float:left;" />
+											<div style="margin-left:20px;"><label for="ability5-type">Type:</label>
+											<select id="ability5-type" name="ability-type5">
+												<option value="Equipment">Equipment</option>
+												<option value="Ability">Ability</option>
+												<option value="Magic">Magic</option>
+											</select>
+											<label for="ability5-name">Name:</label><input type="text" id="ability5-name" name="ability5-name" />
+											<label>Turn on bullet point?:</label>
+												<input type="radio" id="ability5-no" name="ability5-bullet" value="no" checked="checked" /><label for="ability5-no">No</label>
+												<input type="radio" id="ability5-yes" name="ability5-bullet" value="yes" /><label for="ability5-yes">Yes</label> <span>(Use li  /li tags)</span><br /> 
+											<label for="ability5-description">Description:</label><textarea id="ability5-description" name="ability5-description" rows="1"  ></textarea></div>
+										<br />
+										<input type="checkbox" id="ability6" name="ability6" value="T" style="float:left;" />
+											<div style="margin-left:20px;"><label for="ability6-type">Type:</label>
+											<select id="ability6-type" name="ability-type6">
+												<option value="Equipment">Equipment</option>
+												<option value="Ability">Ability</option>
+												<option value="Magic">Magic</option>
+											</select>
+											<label for="ability6-name">Name:</label><input type="text" id="ability6-name" name="ability6-name" />
+											<label>Turn on bullet point?:</label>
+												<input type="radio" id="ability6-no" name="ability6-bullet" value="no" checked="checked" /><label for="ability6-no">No</label>
+												<input type="radio" id="ability6-yes" name="ability6-bullet" value="yes" /><label for="ability6-yes">Yes</label> <span>(Use li  /li tags)</span><br /> 
+											<label for="ability6-description">Description:</label><textarea id="ability6-description" name="ability6-description" rows="1"  ></textarea></div>
+										<br />
+										<input type="checkbox" id="ability7" name="ability7" value="T" style="float:left;" />
+											<div style="margin-left:20px;"><label for="ability7-type">Type:</label>
+											<select id="ability7-type" name="ability-type7">
+												<option value="Equipment">Equipment</option>
+												<option value="Ability">Ability</option>
+												<option value="Magic">Magic</option>
+											</select>
+											<label for="ability7-name">Name:</label><input type="text" id="ability7-name" name="ability7-name" />
+											<label>Turn on bullet point?:</label>
+												<input type="radio" id="ability7-no" name="ability7-bullet" value="no" checked="checked" /><label for="ability7-no">No</label>
+												<input type="radio" id="ability7-yes" name="ability7-bullet" value="yes" /><label for="ability7-yes">Yes</label> <span>(Use li  /li tags)</span><br /> 
+											<label for="ability7-description">Description:</label><textarea id="ability7-description" name="ability7-description" rows="1"  ></textarea></div>
+										<br />
+										<input type="checkbox" id="ability8" name="ability8" value="T" style="float:left;" />
+											<div style="margin-left:20px;"><label for="ability8-type">Type:</label>
+											<select id="ability8-type" name="ability-type8">
+												<option value="Equipment">Equipment</option>
+												<option value="Ability">Ability</option>
+												<option value="Magic">Magic</option>
+											</select>
+											<label for="ability8-name">Name:</label><input type="text" id="ability8-name" name="ability8-name" />
+											<label>Turn on bullet point?:</label>
+												<input type="radio" id="ability8-no" name="ability8-bullet" value="no" checked="checked" /><label for="ability8-no">No</label>
+												<input type="radio" id="ability8-yes" name="ability8-bullet" value="yes" /><label for="ability8-yes">Yes</label> <span>(Use li  /li tags)</span><br /> 
+											<label for="ability8-description">Description:</label><textarea id="ability8-description" name="ability8-description" rows="1"  ></textarea></div>
+										<br />
+										<input type="checkbox" id="ability9" name="ability9" value="T" style="float:left;" />
+											<div style="margin-left:20px;"><label for="ability9-type">Type:</label>
+											<select id="ability9-type" name="ability-type9">
+												<option value="Equipment">Equipment</option>
+												<option value="Ability">Ability</option>
+												<option value="Magic">Magic</option>
+											</select>
+											<label for="ability9-name">Name:</label><input type="text" id="ability9-name" name="ability9-name" />
+											<label>Turn on bullet point?:</label>
+												<input type="radio" id="ability9-no" name="ability9-bullet" value="no" checked="checked" /><label for="ability9-no">No</label>
+												<input type="radio" id="ability9-yes" name="ability9-bullet" value="yes" /><label for="ability9-yes">Yes</label> <span>(Use li  /li tags)</span><br /> 
+											<label for="ability9-description">Description:</label><textarea id="ability9-description" name="ability9-description" rows="1"  ></textarea></div>
+										<br />
+										<input type="checkbox" id="ability10" name="ability10" value="T" style="float:left;" />
+											<div style="margin-left:20px;"><label for="ability10-type">Type:</label>
+											<select id="ability10-type" name="ability-type10">
+												<option value="Equipment">Equipment</option>
+												<option value="Ability">Ability</option>
+												<option value="Magic">Magic</option>
+											</select>
+											<label for="ability10-name">Name:</label><input type="text" id="ability10-name" name="ability10-name" />
+											<label>Turn on bullet point?:</label>
+												<input type="radio" id="ability10-no" name="ability10-bullet" value="no" checked="checked" /><label for="ability10-no">No</label>
+												<input type="radio" id="ability10-yes" name="ability10-bullet" value="yes" /><label for="ability10-yes">Yes</label> <span>(Use li  /li tags)</span><br /> 
+											<label for="ability10-description">Description:</label><textarea id="ability10-description" name="ability10-description" rows="1"  ></textarea></div>
+										<br />
+									</fieldset>
+								</div>
+							</div>
+							<div style="margin: 10px 0px 8px; text-align: center;"><input type="submit" value="Submit" />
+							<input type="reset" value="Reset Form" /></div>
+						</div>
+						</form>
+					</div>
+					<footer>
+						<p>The beautiful banner art was created by <a href="http://www.pixiv.net/member.php?id=4795648" target="_blank">アンティーク</a>.The skin and templates were made exclusively for <a href="http://loztalesofhyrule.jcink.net/index.php?act=idx" target="_blank"><i>Tales of Hyrule</i></a> by <a href="http://loztalesofhyrule.jcink.net/index.php?showuser=1" target="_blank">Zero</a>. The database was</p>
+						<p>coded by <a href="http://loztalesofhyrule.jcink.net/index.php?showuser=93" target="_blank">Crim</a>. Images and Artwork were taken from official sources and <a href="https://www.zerochan.net/" target="_blank">ZeroChan</a> and belong to their rightful owners. All member-made content</p>
+						<p>is copyright to their respective owners. Do not remove content without seeking the appropriate permission beforehand. No profit is made from this forum.</p>
+					</footer>
+				</div>
+		</div>
+
+	</body>
+</html>

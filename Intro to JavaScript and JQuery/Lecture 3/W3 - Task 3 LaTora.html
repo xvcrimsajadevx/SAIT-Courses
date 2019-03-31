@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>While Example</title>
+        <script type="text/javascript">
+            function displayNumbers() { //Declares funtion displayNumbers
+                var i = 0; //Declares variable i and sets value at 0
+                    while (i <= 10) { //Start loop - While i is less than or equal to 10
+                        document.write (i + "<br />"); //write i to document and add line break
+                        i++; //Incriment i by 1 and pass through loop again until conditions met
+                    }
+            }
+            
+            function displayOddNumbers() { //Declares funtion displayNumbers
+                var i = 0; //Declares variable i and sets value at 0
+                var total = 0; //Declares variable total and sets value at 0
+                    while (i <= 10) { //Start loop - While i is less than or equal to 10
+                        if ((i % 2) == 1) {//If remander of i divided by 2 equals 1
+                            document.write (i + "<br />"); //write i to document and add line break
+                            total = total + i; //Adds i to variable total
+                        };
+                        i++; //Incriment i by 1 and pass through loop again until conditions met
+                    }
+                document.write ("Total equals: " + total); //Writes total to document
+            }
+        </script>
+    </head>
+    <body>
+        <h1>While - Pre-Test Loop Statement</h1>
+        <h3>Display Numbers 0 - 10</h3>
+        <script>
+            displayNumbers(); //Executes function displayNumbers
+        </script>
+        <hr>
+        <h3>Displays Odd Numbers between 0 - 10 and adds them together</h3>
+        <script>
+            displayOddNumbers(); //Executes function displayOddNumbers
+        </script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculate and Write</title>
+        
+    </head>
+    <body>
+        <p><input type="button" id="sales" value="Click" onclick="calcTotal()" /> to enter two values and the operation you wish to use.</p>
+        <p>Valid operators include:</p>
+        <ul><li>Add</li>
+            <li>Subtract</li>
+            <li>Multiply</li>
+            <li>Divide</li></ul>
+        
+        <script type="text/javascript">
+            function calcTotal() {
+                var value1 = parseInt(prompt("Enter the value of the first number you wish to calculate."));
+                var value2 = parseInt(prompt("Enter the value of the second number you wish to calculate."));
+                var operator = prompt("Which operator would you like to use? Type Add, Subtract, Multiply, or Divide.");
+                var total;
+            
+                if (operator == "Add" || operator == "add") {
+                    total = value1 + value2;
+                    
+                    document.write("</br>Your total is <b>" + total + "</b>.")
+                }
+                
+                else if (operator == "Subtract" || operator == "subtract") {
+                    total = value1 - value2;
+                    
+                    document.write("</br>Your total is <b>" + total + "</b>.")
+                }
+                
+                else if (operator == "Multiply"  || operator == "multiply") {
+                    total = value1 * value2;
+                    
+                    document.write("</br>Your total is <b>" + total + "</b>.")
+                }
+                
+                else if (operator == "Divide" || operator == "divide") {
+                    total = value1 / value2;
+                    
+                    document.write("</br>Your total is <b>" + total + "</b>.")
+                }
+                
+                else {
+                    document.write("</br>Sorry, invalid operator.</b>")
+                }
+                
+            }
+        </script>
+        
+    </body>
+</html>

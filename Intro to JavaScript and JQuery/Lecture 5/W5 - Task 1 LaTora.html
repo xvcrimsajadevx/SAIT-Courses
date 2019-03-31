@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style type="text/css">
+            .sliderNav {
+                color: #633763;
+                font-weight: bold;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -o-user-select: none;
+                user-select: none;
+            }
+            
+            #prevImage, #nextImage {
+                font-size: 22px;
+                display: inline-block;
+                text-decoration: underline;
+            }
+            
+            .sliderNav:hover {
+                color: blue;
+            }
+        </style>
+        
+        <script type="text/javascript">
+            var images = ["grandblue.jpg", "grandblue1.jpg", "grandblue2.jpg", "grandblue3.jpg", "grandblue4.jpg"];
+            
+            function prevSlideImage() {
+                var scroller = document.getElementById("imgScroller");
+                
+                if (scroller.src.match(images[4])) {
+                        scroller.src = images[3];
+                }
+                else if (scroller.src.match(images[3])) {
+                        scroller.src = images[2];
+                }
+                else if (scroller.src.match(images[2])) {
+                        scroller.src = images[1];
+                }
+                else if (scroller.src.match(images[1])) {
+                        scroller.src = images[0];
+                }
+                else {
+                        scroller.src = images[4]
+                }
+            }
+            
+            function nextSlideImage() {
+                var scroller = document.getElementById("imgScroller");
+                
+                if (scroller.src.match(images[0])) {
+                        scroller.src = images[1];
+                }
+                else if (scroller.src.match(images[1])) {
+                        scroller.src = images[2];
+                }
+                else if (scroller.src.match(images[2])) {
+                        scroller.src = images[3];
+                }
+                else if (scroller.src.match(images[3])) {
+                        scroller.src = images[4];
+                }
+                else {
+                        scroller.src = images[0]
+                }
+            }
+        </script>
+        
+    </head>
+    <body>
+        <center><h1>Slide Show</h1>
+        <img id="imgScroller" src="grandblue.jpg" width="400px" height= "380px" /><br/>
+        
+        <div id="prevImage" class="sliderNav" onclick="prevSlideImage()" ><< Previous</div> | <div id="nextImage" class="sliderNav" onclick="nextSlideImage()" >Next >></div></center>
+        </script>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style type="text/css">
+            .imageContainer {
+                border: 1px solid grey;
+                width: 210px;
+                height: 250px;\
+                margin: auto;
+                position: relative;
+                display: inline-block;
+            }
+            .imageDisplay {
+                border: 1px solid grey;
+                width: 180px;
+                height: 180px;
+                margin: 12px auto;
+            }
+            .textContainer {
+                width: 180px;
+                margin: auto;
+                text-align: center;
+            }
+            .imgThumb {
+                width: 180px;
+                height: 180px;
+            }
+        </style>
+        <script type="text/javascript">
+            var character = []
+            
+            character[0] = ["grandblue.jpg", "Vaseraga", "Skybound"];
+            character[1] = ["grandblue1.jpg", "Cain", "Hero of Dawn" ];
+            character[2] = ["grandblue2.jpg", "Lancelot", "Twinfang Prodigy"];
+            character[3] = ["grandblue3.jpg", "Haohmaru", "Samurai Spirit"];
+            character[4] = ["grandblue4.jpg", "Jamil", "Shadow Assassin"];
+            
+            character.forEach(function(element) {
+                alert(element);
+                document.write('<div class="imageContainer">'); //Start div imageContainer
+                    document.write('<div class="imageDisplay"><img src = character[' + index + '][0] + 'class="imgThumb" /></div>');
+                    //document.write('<div class="textContainer">');
+                        //document.write('<span class="charName">' + character[i][1] + '</span><br>');
+                        //document.write('<span class="charClass">' + character[i][2] + '</span><br>');
+                    //document.write('</div>'); //Close div textContainer
+                document.write('<div>'); //Close div imageContainer
+            }
+            )
+        
+        </script>
+    </head>
+    <body>
+        <div class="imageContainer">
+            <div class="imageDisplay"><img src ="grandblue.jpg" class="imgThumb" /></div>
+            <div class="textContainer">
+                <span class="charName">Name</span><br>
+                <span class="charClass">Class</span>
+            </div>
+            
+        </div>
+    </body>
+</html>

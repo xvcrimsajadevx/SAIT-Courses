@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script type="text/javascript">
+            function getItemQTY() {
+                var i = 1; //Declares variable i and sets at 1
+                
+                document.writeln('<span><b>Item : QTY</b></span><br /)'); //Writes indicator text
+                
+                while (i <= 4) { //Starts loop - While i is Less Than or Equal To 4
+                    var itemQTY = parseInt(prompt("How many of Item " + i + " do you wish to bring with you?")); //Prompt user for quantitly of Item i
+                    
+                    document.writeln('<span>Item ' + i + ' : ' + itemQTY + '</span><br />'); //Write 'Item i : Quantity' to document
+                    
+                    i++; //Increment i and run again until conditions met
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <h1>Select Your Gear for the Game</h1>
+            <p>You are allowed to pick up to 4 items from the following list before the game begins:</p>
+        <h3>Supplies Available</h3>
+            <table width="50%" border="0">
+                <tr>
+                    <td colspan="2">Bag of Food (1-day supply)</td>
+                    <td colspan="2">Bottle of Water (1-day supply)</td>
+                </tr>
+                <tr>
+                    <td>Sword</td>
+                    <td>Shield</td>
+                    <td>Kevlar Vest</td>
+                    <td>Hunting Knife</td>
+                </tr>
+                <tr>
+                    <td>Bow with 1 Quiver of Arrows</td>
+                    <td>10 Extra Arrows</td>
+                    <td>Backpack</td>
+                    <td>Slingshot</td>
+                </tr>
+                <tr>
+                    <td>Box of 5 Firestarters</td>
+                    <td>Pet Goat</td>
+                    <td>Falcon</td>
+                    <td>Falconer's Gloves</td>
+                </tr>
+                <tr>
+                    <td>Notebook</td>
+                    <td>Pen and Pencil Set</td>
+                    <td>Walking Stick</td>
+                    <td>Hammer</td>
+                </tr>
+            </table>
+            
+            
+        <br />
+        <h3>Enter the Quantity of the 4 items you wish to bring with you.</h3>
+        
+        <script>
+            getItemQTY(); //Calls function getItemQTY()
+            
+            //Code works as intended in Firefox and Explorer, but loads JavaScript before rendering the HTML in Chrome and Edge
+            //windows.onload and eventlisteners have failed to get HTML to load first
+        </script>
+
+    </body>
+</html>

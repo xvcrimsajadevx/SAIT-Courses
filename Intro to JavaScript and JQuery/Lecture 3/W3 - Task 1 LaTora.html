@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script type="text/javascript">
+            function oddFunc(startNum, endNum) { //Creates function oddFunc with parameters startNum and endNum
+                
+                var total = 0; //Creates variable total and sets value to 0
+                if ((startNum % 2) == 0) //If remander of start value divided by 2 equals 0
+                    startNum += 1; //Add 1 to the starting number
+                for (i = startNum; i <= endNum; i = i + 2) { //Start of loop - Start number is incremented by 2 after each step while it is still less than or equal to end number
+                    document.write(i + " "); //Each number from the increment is written to document until conditions are met to break loop
+                    total += i; //Each incremented number is added to variable total until end of loop
+                }
+                document.write(" <br/> Total = " + total); //Variable total is then written to document after loop is broken
+            }
+            
+            function evenFunc(startNum, endNum) { //Creates function evenFunc with parameters startNum and endNum
+                
+                var total = 0; //Creates variable total and sets value to 0
+                if ((startNum % 2) == 1) //If remander of start value divided by 2 equals 1
+                    startNum += 1; //Add 1 to the starting number
+                for (i = startNum; i <= endNum; i = i + 2) { //Start of loop - Start number is incremented by 2 after each step while it is still less than or equal to end number
+                    document.write(i + " "); //Each number from the increment is written to document until conditions are met to break loop
+                    total += i; //Each incremented number is added to variable total until end of loop
+                }
+                document.write(" <br/> Total = " + total); //Variable total is then written to document after loop is broken
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Total of Odd Numbers</h2>
+        <h3>Displaying Odd Numbers between startVal and endVal</h3>
+        <h3>Also Displaying Total</h3>
+        
+        <script>
+        var startVal = parseInt(prompt("Please enter the start value:")); //Prompts user for a start value and stores in variable startVal
+        var endVal = parseInt(prompt("Please enter the end value:")); //Prompts user for an end value and stores in variable endVal
+        oddFunc(startVal, endVal); //Executes oddFunct function and ends arguments (startVal, endVal) to funtion perameters (startNum, endNum)
+        </script>
+        <hr>
+        <h2>Total of Even Numbers</h2>
+        <h3>Displaying Even Numbers between startVal and endVal</h3>
+        <h3>Also Displaying Total</h3>
+        
+        <script>
+        evenFunc(startVal, endVal); //Executes evenFunct function and send arguments (startVal, endVal) to funtion perameters (startNum, endNum)
+        </script>
+    </body>
+</html>

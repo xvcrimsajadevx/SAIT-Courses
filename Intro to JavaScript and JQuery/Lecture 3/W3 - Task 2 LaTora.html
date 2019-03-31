@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dynamically Add HTML Table</title>
+        <script type="text/javascript">
+            function getPlayers(noPlayers) { //Declares function getPlayers with parameters (noPlayers)
+                var player, points; //Sets up two variables: player and points
+                document.write('<table width="40%" border="1">'); //Creates table with a width of 40% and border type 1 and write it to doccument
+                for (var i = 1; i <= noPlayers; i++) { //Start of loop - For as long as noPlayers is less than or equal to the number of players
+                    player = prompt("Enter the name of player No. " + i + ":"); //Prompt user for the name of the player
+                    points = prompt("Enter the points player No. " + i + " has:"); //Prompt user for the number of points the player has
+                    document.write('<tr>'); //Create a table row and write it to document
+                    document.write('<td width="50">' + player + '</td>'); //Create table data half the width of the table and write player's name to document
+                    document.write('<td width="50">' + points + '</td>'); //Create table data half the width of the table and write player's points to document
+                    document.write('</tr>'); //Write end of table row to document
+                }
+                document.write('</table>'); //Write end of table to document
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Today's Players</h1>
+        <h3>Enter the Number of Players</h3>
+        <script>
+            var numPlayers = parseInt(prompt("How many players would you like to record information for?")); //Prompts user for number of players
+            getPlayers(numPlayers); //Executes getPlayers function and sends argument (numPlayers) to function parameters (noPlayers)
+        </script>
+    </body>
+</html>

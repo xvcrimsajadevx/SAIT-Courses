@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payroll</title>
+        <script type="text/javascript">
+            // ~~~~~~~ Original Code ~~~~~~~
+            
+            /* function getPay()    {
+                document.write('<table width="40%" align = "center">');
+
+                var name = " ";
+                var hours = 0;
+                var rate = 0;
+                var grossPay = 0;
+                var netPay = 0;
+
+                document.write('<tr><td>name</td><td>gross pay</td><td>net pay</td></tr>');
+                
+                name = prompt("Enter the first employee's name:");
+                
+                do     {
+                    hours = parseFloat(prompt("How many hours did " + name + " work this week?"));
+                    rate = parseFloat(prompt("What is " + name + "'s hourly pay rate?"));
+
+                    if (hours > 40)
+                        grossPay = (40 * rate) + ((hours - 40) * 1.5 * rate);
+                    else
+                        grossPay = hours * rate; 
+                    
+                    netPay = grossPay * .85;
+                    document.write('<tr><td>' + name + '</td><td>$ ' + grossPay + '</td><td>$ ' + netPay + '</td></tr>');
+
+                    name = prompt("Enter another employee's name or enter 'done' when finished:");
+	            } while  (name != "done")
+                    
+                document.write('</table>');
+            } */
+            
+            // ~~~~~~~ New Code ~~~~~~~
+            
+            var employeeData = [];
+            var name = " ", hours = 0, rate = 0, grossPay = 0, netPay = 0;
+            
+            function getEmployeeData() { //Function used to gather individual employee data
+                    
+                    name = prompt("Enter an employee's name, or type 'done' when finished:");
+                        
+                    if (name == "done") {
+                        employeeData = ["done"]
+                    }
+                    
+                    else {
+                        hours = parseFloat(prompt("How many hours did " + name + " work this week?"));
+                        rate = parseFloat(prompt("What is " + name + "'s hourly pay rate?"));
+                            
+                        if (hours > 40)
+                            grossPay = (40 * rate) + ((hours - 40) * 1.5 * rate);
+                        else
+                            grossPay = hours * rate;
+                        
+                        netPay = grossPay * .85;
+                            
+                        employeeData = [name, hours, rate, grossPay, netPay];
+                        return employeeData;
+                    }
+            }
+            
+            
+            function getPay() { //Function used to gather data of multiple employees and writes data to table
+                
+                document.write('<table width="40%" align = "center">');
+                document.write('<tr><td>name</td><td>gross pay</td><td>net pay</td></tr>');
+                
+                
+                // ~~~~~~~ Single Array Code ~~~~~~~
+                /* getEmployeeData(); //calls funtion getEmployeeData()
+                
+                do  {
+                    name = employeeData[0];
+                    grossPay = employeeData[3];
+                    netPay = employeeData[4];
+                    
+                    document.write('<tr><td>' + name + '</td><td>$ ' + grossPay + '</td><td>$ ' + netPay + '</td></tr>');
+
+                    getEmployeeData();
+	            } while  (employeeData != "done") */
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                
+                
+                // ~~~~~~~ Double Array Code ~~~~~~~
+                var employeeList = [];
+                
+                getEmployeeData();
+                
+                do {
+                        name = employeeData[0];
+                        grossPay = employeeData[3];
+                        netPay = employeeData[4];
+                        
+                        employeeList.push('<tr><td>' + name + '</td><td>$ ' + grossPay + '</td><td>$ ' + netPay + '</td></tr>');
+                    
+                    getEmployeeData();
+                } while (employeeData != "done")
+                
+                employeeList.forEach(function(item, index, array) {
+                    document.write(item);
+                })
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                
+                document.write('</table>'); 
+            } 
+        </script>
+    </head>
+    <body>
+        <h1>Calculate Employees Paychecks</h1>
+        <p>You can enter payroll information for all employees. Paychecks are calculated as shown:</p>
+        <p>OUTPUT GOES HERE</p>
+        <p><input type="button" id="pay" value="Click to begin entering employees" onclick="getPay()" /></p>
+    </body>
+</html>

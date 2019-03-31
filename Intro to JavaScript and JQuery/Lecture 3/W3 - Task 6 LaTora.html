@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script type="text/javascript">
+            function gradeAverage() {
+                var grades = [];
+                var sum = 0;
+                var i = 0;
+                var grade = 0;
+                
+                do {
+                    
+                    grade = parseInt(prompt("Enter your grade here. When finished, enter 999."));
+                    
+                    if (grade != 999 && grade > 100 || grade < 0 ) {
+						alert("Invalid entry. Grades should be between 0 - 100.");
+                    }
+				
+					else if (grade === 999) {
+                        sum = sum;
+                    }
+                    
+                    else {
+                        grades.push(grade);
+                        sum = sum + grade;
+                    }
+                    
+                } while (grade != 999);
+                
+                var aveGrade = ( sum / grades.length );
+                var overAve = 0;
+                var underAve = 0;
+                var equalAve = 0;
+                
+                grades.forEach(function(item, index, array) {
+                    if (item > aveGrade) {
+                        overAve = overAve + 1;}
+                    else if (item < aveGrade) {
+                        underAve = underAve + 1;}
+                    else {
+                        equalAve = equalAve + 1;}
+                })
+                                      
+                document.write("<span>Your grade average is " + aveGrade + ".</span><br />");
+                document.write("<span>You have " + overAve + " grade(s) above your grade average.</span><br />");
+                document.write("<span>You have " + underAve + " grade(s) below your grade average.</span><br />");
+            }
+        </script>
+    </head>
+    <body>
+    <h1>Calculating Grade Average</h1>
+        <h2>Instructions:</h2>
+        <ul>
+            <li>Click button.</li>
+            <li>Enter your grades one at a time into the prompt.</li>
+            <li>When finished, enter 999.</li>
+        </ul>
+        
+        <button type="button" onclick="gradeAverage()">Click me!</input>
+    </body>
+</html>

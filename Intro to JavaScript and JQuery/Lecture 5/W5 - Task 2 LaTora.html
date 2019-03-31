@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style type="text/css">
+            .imgThumb {
+                width: 180px;
+                height: 180px;
+            }
+            .imgFull {
+                width: 400px;
+                height; 400px;
+            }
+            
+        </style>
+        <script type="text/javascript">
+            
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr style="text-align: center">
+                <td>
+                    <img id="char1" class="imgThumb" src="grandblue.jpg" onmouseover="inlargeImage(id)" onmouseout="shrinkImage(id)"><br>
+                    <span>Vaseraga</span><br>
+                    <span>Skybound</span><br>
+                </td>
+                <td>
+                    <img id="char2" class="imgThumb" src="grandblue1.jpg" onmouseover="inlargeImage(id)" onmouseout="shrinkImage(id)"><br>
+                    <span>Cain</span><br>
+                    <span>Hero of Dawn</span><br>
+                </td>
+                <td>
+                    <img id="char3" class="imgThumb" src="grandblue2.jpg" onmouseover="inlargeImage(id)" onmouseout="shrinkImage(id)"><br>
+                    <span>Lancelot</span><br>
+                    <span>Twinfang Prodigy</span><br>
+                </td>
+                <td>
+                    <img id="char4" class="imgThumb" src="grandblue3.jpg" onmouseover="inlargeImage(id)" onmouseout="shrinkImage(id)"><br>
+                    <span>Haohmaru</span><br>
+                    <span>Samurai Spirit</span><br>
+                </td>
+                <td>
+                    <img id="char5" class="imgThumb" src="grandblue4.jpg" onmouseover="inlargeImage(id)" onmouseout="shrinkImage(id)"><br>
+                    <span>Jamil</span><br>
+                    <span>Shadow Assassin</span><br>
+                </td>
+            </tr> 
+        </table>
+        
+        <script>
+            function inlargeImage(id) {
+                var mouseoverClass = document.getElementById(id);
+                
+                mouseoverClass.className = "imgFull";
+            }
+            function shrinkImage(id) {
+                var mouseoverClass = document.getElementById(id);
+                
+                mouseoverClass.className = "imgThumb";
+            }
+        </script>
+    </body>
+</html>

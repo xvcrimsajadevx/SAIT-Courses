@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script type="text/javascript">
+        
+        </script>
+    </head>
+    <body>
+        <form>
+            <lable for="firstName">First Name:</lable> <input type = "text" id = "firstName" /><br />
+            <lable for="lastName">Last Name:</lable> <input type = "text" id = "lastName" /><br />
+            <lable for="email">e-mail:</lable> <input type = "text" id = "email" /><br />
+            <br />
+            <input type="button" value="Validate Form" onclick = "validateForm()" />
+        </form>
+        <br />
+        <br />
+        <form>
+            <input name="size" type="radio" value="large" id="sizeLarge" /><lable for="sizeLarge">Large</lable><br />
+            <input name="size" type="radio" value="Medium" id="sizeMedium" /><lable for="sizeMedium">Medium</lable><br />
+            <input name="size" type="radio" value="Small" id= "sizeSmall" /><lable for="sizeSmall">Small</lable><br />
+            <br />
+            <select name="temperature">
+                <option value="" selected="selected" disabled>Choose a temperature</option>
+                <option value="Celcius">Celcius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+            </select>
+            <br />
+            <br />
+            <input type="button" value="Validate Options" onclick = "validateOptions()" />
+        </form>
+    </body>
+</html>

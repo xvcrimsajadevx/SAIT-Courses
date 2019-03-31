@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script type="text/javascript">
+            function assessment1() {
+                var num1 = parseInt(prompt("Enter your first number:"));
+                var num2 = parseInt(prompt("Enter your second number:"));
+            
+                if (num1 > num2) {
+                    console.log(num1 + " is greater than " + num2);
+                }
+                else {
+                    console.log(num2 + " is greater than " + num1);
+                }
+            }
+            
+            function assessment2() {
+                var num;
+                
+                num[0] = parseInt(prompt("Enter your first number:"));
+                num[1] = parseInt(prompt("Enter your second number:"));
+                num[2] = parseInt(prompt("Enter your third number:"));
+                
+                console.log(num);
+            }
+        </script>
+    </head>
+    <body>
+        <p>To assess first function, click here: <input type="button" value="Assessment 1" onclick="assessment1()" /></p>
+        <p>To assess second function, click here: <input type="button" value="Assessment 2" onclick="assessment2()" /></p>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script type="text/javascript">
+            
+        </script>
+    </head>
+    <body>
+        <img id="img1" src="nature1.jpg" width="600px" height= "600px" /><br/>
+        <button onclick="myFunction()">Click me to change the picture</button>
+        
+        
+        <script>
+        function myFunction() {
+            var myVariable = document.getElementById("img1");
+            
+            /* if (myVariable.src.indexOf("nature1.jpg")) {
+                myVariable.src = "nature2.jpg";
+            }
+            else {
+                myVariable.src = "nature1.jpg";
+            } */
+            
+            /* if (myVariable.src.search("nature1.jpg")) {
+                myVariable.src = "nature2.jpg";
+            }
+            else {
+                myVariable.src = "nature1.jpg";
+            } */
+            
+            if (myVariable.src.match("nature1.jpg")) {
+                myVariable.src = "nature2.jpg";
+            }
+            else {
+                myVariable.src = "nature1.jpg";
+            }
+            
+        }
+            
+            //search() and indexOf() methods would execute only the If part of statement, and not Else. Also tried Switch to no avail.
+            //Found Match method here: http://users.aber.ac.uk/ruw/misc/swapimage.php
+        </script>
+        
+        
+    </body>
+</html>

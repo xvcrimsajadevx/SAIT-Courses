@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Manipulation</title>
+        <style type="text/css">
+            .cssClass1 {
+                color: blue;
+                border: 2px solid red;
+            }
+            .cssClass2 {
+                background-color: #ffff00;
+                padding: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="font-size: xx-large" id="div1">Your text will be here</div>
+        
+        <script>
+            var divElement = document.getElementById("div1");
+            
+            divElement.onmouseover = function() {
+                divElement.className = "cssClass2";
+            };
+            
+            divElement.onmouseout = function() {
+                divElement.className = "cssClass1";
+            };
+        </script>
+    </body>
+</html>

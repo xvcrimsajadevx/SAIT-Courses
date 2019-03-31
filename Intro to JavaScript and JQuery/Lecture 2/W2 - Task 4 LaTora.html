@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Area Calculator</title>
+        <script type="text/javascript">
+            function calcArea() {
+                var shape = prompt("Which shape would you like to calculate for? c=Circle, s=Square, t=Triange");
+                var area;
+            
+                switch (shape) {   
+                    case "c":
+                        var radius = prompt("What is the radius of your circle?");
+                    
+                        area = 3.1415926 * radius * radius;
+                        alert("The area of your circle is: " + area + " units.");
+                        break;
+                        
+                    case "s":
+                        var length = prompt("What is the length of your square?");
+                        var width = prompt("What is the width of your square?");
+                    
+                        area = length * width;
+                        alert("The area of your square is: " + area + " units.");
+                        break;
+                    
+                    case "t":
+                        var base = prompt("What is the base of your triange?");
+                        var height = prompt("What is the height of your triangle?");
+                    
+                        area = (base * height) / 2;
+                        alert("The area of your triangle is: " + area + " units.");
+                        break;
+                    
+                    default:
+                        alert("Sorry. Invalid entry.");
+                }
+            }
+            
+        
+        </script>
+    </head>
+    <body>
+        <h1>Find the area of a shape</h1>
+        <ul><li>For a circle, enter c</li>
+            <li>For a square, enter s</li>
+            <li>For a triangle, enter t</li></ul>
+        
+        <input type="button" value="Begin Calculation" onclick="calcArea()" />
+    </body>
+</html>

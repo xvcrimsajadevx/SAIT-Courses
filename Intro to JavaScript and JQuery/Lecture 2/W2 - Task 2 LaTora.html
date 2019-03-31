@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modified Slide 6</title>
+    </head>
+    <body>
+        <h1>JavaScript Decision using if</h1>
+        
+        <p> IF - First Form Demo</p>
+        
+        <script type="text/javascript">
+            var d = new Date(); //Creates variable that stores the date and time when page loads
+            var time = d.getHours(); //Stores hours value of date in a variable called time
+            document.write("</br>The hour is: " + time); //Writes what hour it us using 24 hour clock
+            
+            if (time < 6) {
+                document.write("</br><b>Why are you even awake?</b>") //If time before 6:00AM displays why are you awake message
+            }
+            else if (time >= 6 && time < 12) {
+                document.write("</br><b>Good Morning!</b>") //If time is 6:00AM or past, but before 12:00PM, wishes user "Good Morning"
+            }
+            else if (time >= 12 && time < 18) {
+                document.write("</br><b>Good Afternoon!</b>") //If time is 12:00PM or past, but before 6:00PM, wishes user "Good Afternoon"
+            }
+            else if (time >= 18) {
+                document.write("</br><b>Good Night!</b>") //If time is 6:00PM or past, wishes user "Good Night"
+            }
+        </script>
+        <p>This example demonstrates the If statement.</p>
+    </body>
+</html>

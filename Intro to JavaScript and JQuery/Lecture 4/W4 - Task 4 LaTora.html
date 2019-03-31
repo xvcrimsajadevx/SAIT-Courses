@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script type="text/javascript">
+        
+        </script>
+    </head>
+    <body>
+        <p>This is a p element</p>
+        <p>This is a second p element.</p>
+        <p>This is a third p element.</p>
+        
+        <button onclick="myFunction()">Guess my job when clicking me</button>
+        
+        <script>
+            function myFunction() {
+                var x = document.getElementsByTagName("p"); //gathers all p elements and puts them in an array
+                var i; //sets variable used to cycle through loop
+                
+                /* for (i = 0; i < x.length; i++) { //loops through each p element
+                    x[i].style.backgroundColor = "red"; //for each p element, change their background color to red 
+                }*/
+                    
+                for (i = 0; i < x.length; i=i+2) { //loops through each p element
+                    x[i].style.backgroundColor = "red"; //for each p element with an even index, change background color to red
+                }
+            }
+        </script>
+    </body>
+</html>
